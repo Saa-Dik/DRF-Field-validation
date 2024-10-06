@@ -4,9 +4,6 @@
 import requests
 import json
 
-# amra get rquest send korbo jate amader database ar table teke data paite pari
-# URL = "http://127.0.0.1:8000/student_update/"
-# URL = "http://127.0.0.1:8000/student-delete/"
 URL ="http://127.0.0.1:8000/student-api/" # aita use korci amra class based view ar jnno
 
 
@@ -18,14 +15,14 @@ def get_data(id=None):
     res = requests.get(url = URL, data =json_data)
     data = res.json()
     print(data)
-get_data(1)
+# get_data(1)
 
 #amra toh age GET request ar jnno likhci akn amara POST method dekhbo 
 def post_data():
 #   if id is not None:
     data = {
-        'name':'mike',
-        'roll':'1321',
+        'name':'sadik',
+        'roll':150,
         'city':'ctg',
     } 
     json_data = json.dumps(data)
